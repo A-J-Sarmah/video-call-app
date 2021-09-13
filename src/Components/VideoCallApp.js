@@ -27,8 +27,8 @@ export default function VideoCallApp({ setInCall }) {
     });
 
     client.on("user-unpublished", (user, mediaType) => {
-      if (mediaType === "audio") {
-        if (user.audioTrack) user.audioTrack.stop();
+      if (mediaType === "audio" && user.audioTrack) {
+           user.audioTrack.stop();
       }
       if (mediaType === "video") {
         setUsers((prevUsers) => {
