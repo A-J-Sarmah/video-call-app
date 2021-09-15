@@ -14,7 +14,7 @@ function App() {
         <main className="mt-5">
           <p className="display-3 mt-5 text-center">Hello There :)</p>
           <p className="text-muted text-center display-5 mt-3">
-            Plase Click Start to join the Metting
+            Please Click Start to join the Meeting
           </p>
           <div className="button text-center mt-5">
             <button
